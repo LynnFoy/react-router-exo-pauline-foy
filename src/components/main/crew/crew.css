@@ -1,0 +1,242 @@
+.crew {
+  background-image: url('../destination/destination-assets/background-destination-desktop.jpg'); /* Remplace avec le bon chemin */
+  background-size: cover;  /* L'image couvre toute la largeur et la hauteur */
+  background-position: center;  /* Centre l'image */
+  background-repeat: no-repeat;  /* Empêche la répétition de l'image */
+  margin: 0;  /* Enlève les marges */
+  height: 100vh;  /* Prend toute la hauteur de la fenêtre */
+  width: 100%;  /* Prend toute la largeur de la fenêtre */
+  
+}
+
+.crew .wrapper {
+  display: flex;
+  padding-top: 120px; 
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.commander-container, .mission-specialist-container, .flight-engineer-container, .pilot-container {
+  width: 100%;
+  max-width: 78%;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  padding-top: 180px; 
+  justify-content: center;
+  text-align: center;
+}
+
+.content-bx {
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  max-width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-bx .left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.content-bx .right {
+  height: 100%;
+}
+
+.wrapper .right img {
+  position: absolute;
+  top: 10%; 
+  left: 0;
+  transform: translateX(250%); 
+  max-width: 45%;
+  height: 100%;
+}
+
+.crew h2 {
+  font-size: 28px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.crew h2 span {
+  color: var(--h2-span-clr);
+  font-weight: 650;
+}
+
+.crew h3 {
+  font-size: 56px;
+  font-family: "Bellefair", sans-serif;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+.crew h3 span {
+  font-size: 32px;
+  color: var(--h3-span-clr);
+}
+
+.crew .left p {
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  max-width: 100%;
+  text-align: center;
+}
+
+.crew .indicator {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.crew .indicator a {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--indi-clr-3);
+  transition: 0.4s;
+  border: none;
+  cursor: pointer;
+}
+
+.crew .indicator a:hover {
+  background-color: var(--indi-clr-2);
+}
+
+.crew .commander-container .indicator a:nth-child(1),
+.crew .mission-specialist-container .indicator a:nth-child(2),
+.crew .flight-engineer-container .indicator a:nth-child(3),
+.crew .pilot-container .indicator a:nth-child(4) {
+  background-color: var(--txt-clr-1);
+}
+
+@media (max-width: 768px) {
+  .commander-container, .mission-specialist-container, .flight-engineer-container, .pilot-container {
+    max-width: 90%;
+    padding-top: 110px; /* Réduit le padding-top pour remonter */
+    gap: 60px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .wrapper .right {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wrapper .right img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: static;
+  }
+
+  .content-bx {
+    max-width: 100%;
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .crew h2 {
+    font-size: 20px;
+  }
+
+  .content-bx .left {
+    text-align: center;
+    align-items: center;
+  }
+
+  .crew h3 {
+    font-size: 40px;
+    gap: 8px;
+  }
+
+  .crew .left p {
+    max-width: 75%;
+    text-align: center;
+  }
+
+  .crew .indicator {
+    justify-content: center;
+  }
+
+  .crew .indicator a {
+    background-color: var(--indi-clr-2);
+  }
+
+  .crew .indicator a:hover {
+    background-color: var(--indi-clr-3);
+  }
+}
+
+@media (max-width: 375px) {
+  .commander-container, .mission-specialist-container, .flight-engineer-container, .pilot-container {
+    max-width: 90%;
+    gap: 32px;
+    padding-top: 60px; /* Réduit le padding-top pour remonter */
+    text-align: center;
+  }
+
+  .content-bx {
+    order: 2;
+    margin-top: -32px;
+    padding-top: 32px;
+  }
+
+  .content-bx .left {
+    gap: 32px;
+  }
+
+  .crew h3 {
+    font-size: 24px;
+  }
+
+  .crew h3 span {
+    font-size: 16px;
+  }
+
+  .crew .left p {
+    font-size: 15px;
+    max-width: 95%;
+    margin-top: -24px;
+  }
+
+  .commander-container > .right,
+  .mission-specialist-container > .right,
+  .flight-engineer-container > .right,
+  .pilot-container > .right {
+    height: 223px;
+    text-align: center;
+    order: 1;
+  }
+}
+
+.commander-container > .right img,
+.mission-specialist-container > .right img,
+.flight-engineer-container > .right img,
+.pilot-container > .right img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-bottom: 1px solid var(--bdr-clr);
+}

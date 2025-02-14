@@ -1,0 +1,227 @@
+.technology {
+  background: url(./technology-assets/background-technology-desktop.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 118%;
+  height: 100vh;
+  position: relative;
+}
+
+.launch-container,
+.spaceport-container,
+.capsule-container {
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  width: 100%;
+  max-width: 78%;
+  height: 100%;
+  padding-top: 120px;
+  padding-bottom: 6rem;
+  text-transform: uppercase;
+}
+
+.launch-container {
+  display: flex;
+}
+
+.technology h2 {
+  font-family: "Barlow condensed", sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 4.72px;
+}
+
+.technology h2 span {
+  color: var(--h2-span-clr);
+  font-weight: 650;
+}
+
+.technology .launch__content-bx,
+.technology .spaceport__content-bx,
+.technology .capsule__content-bx {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.technology .content {
+  display: flex;
+  gap: 80px;
+}
+
+.technology .content .content__indicator {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-family: "Bellefair", sans-serif;
+  font-size: 32px;
+}
+
+.technology .content .content__indicator a {
+  background-color: transparent;
+  color: var(--txt-clr-1);
+  font-size: 32px;
+  font-weight: 300;
+  width: 80px;
+  aspect-ratio: 1;
+  border: 1px solid var(--indi-clr-4);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technology .content .content__indicator a:hover {
+  border: 1px solid var(--txt-clr-1);
+}
+
+.launch-container .content__indicator a:nth-child(1),
+.spaceport-container .content__indicator a:nth-child(2),
+.capsule-container .content__indicator a:nth-child(3) {
+  background-color: var(--txt-clr-1);
+  color: var(--txt-clr-3);
+}
+
+.technology .content .content__details {
+  font-family: "Barlow", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.technology h3 {
+  font-size: 56px;
+  font-family: "Bellefair", sans-serif;
+  font-weight: 300;
+  gap: 11px;
+  display: flex;
+  flex-direction: column;
+}
+
+.technology h3 span {
+  font-size: 16px;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 2.7px;
+}
+
+.technology p {
+  font-size: 18px;
+  text-transform: none;
+  line-height: 32px;
+  max-width: 27.5rem;
+}
+
+.technology .img-bx {
+  width: 400px;
+  height: 400px;
+}
+
+.technology .img-bx img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .launch-container,
+  .spaceport-container,
+  .capsule-container {
+    max-width: 100%;
+    padding-top: 120px;
+    padding-bottom: 3.7rem;
+  }
+
+  .technology .launch__content-bx,
+  .technology .spaceport__content-bx,
+  .technology .capsule__content-bx {
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  .technology .content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+    order: 2;
+  }
+
+  .technology .content .content__details {
+    align-items: center;
+  }
+
+  .technology .content .content__indicator {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .technology h2 {
+    padding-left: 5%;
+  }
+
+  .technology h3 {
+    font-size: 40px;
+  }
+
+  .technology p {
+    line-height: 25px;
+    max-width: 65%;
+  }
+
+  .technology .img-bx {
+    width: 100%;
+    height: 310px;
+  }
+}
+
+@media (max-width: 375px) {
+  .launch-container,
+  .spaceport-container,
+  .capsule-container {
+    gap: 32px;
+    padding-top: 88px;
+    padding-bottom: 2.5rem;
+  }
+
+  .technology .content {
+    gap: 26px;
+  }
+
+  .technology .launch__content-bx,
+  .technology .spaceport__content-bx,
+  .technology .capsule__content-bx {
+    gap: 32px;
+  }
+
+  .technology h3 {
+    font-size: 24px;
+  }
+
+  .technology h3 span {
+    font-size: 14px;
+  }
+
+  .technology p {
+    font-size: 15px;
+    max-width: 88%;
+  }
+
+  .technology .content .content__indicator {
+    gap: 16px;
+  }
+
+  .technology .content .content__indicator a {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .technology .img-bx {
+    height: 170px;
+  }
+}

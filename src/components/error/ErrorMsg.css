@@ -1,0 +1,28 @@
+.error-message {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 115%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.error-message h2 {
+  margin: 0;
+}
+
+.error-message a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.error-message a:hover {
+  text-decoration: underline;
+  color: #ff66b2;
+}
